@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Survey Form
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+
+    <!-- Create Form -->
+    <form id="survey-form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Enter your First name" />
+        </div>
+        <div class="form-control">
+            <label for="last-name"> Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter your Last name" />        
+        </div>
+
+        <div class="form-control">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+        
+        <div class="form-control">
+            <!-- Dropdown options -->
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+               
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Gender</label>
+            <label for="male">
+                <input type="checkbox" id="male">Male</input>
+            </label>
+            <label for="female">
+                <input type="checkbox" id="female">Female</input>
+            </label>
+            <label for="PreferNotToSay">
+                <input type="checkbox" id="PreferNotToSay">Prefer Not To Say</input>
+            </label>
+
+        </div>
+        <div class="form-control">
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" placeholder="Enter your current Profession"/>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" required>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+
+        <div id="popup">
+            <div class="popup-content" id="popup-content">
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
